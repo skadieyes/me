@@ -4,7 +4,7 @@
 }
 
 .app-body {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0px;
@@ -122,9 +122,6 @@
 /**
  ** profile
 **/
-.profile {
-  padding: 10px 40px;
-}
 
 .profile-item {
   text-align: left;
@@ -147,5 +144,49 @@
  ** content
  **/
 .app-content {
+  padding: 20px 40px;
+}
+
+/**
+ **
+ **/
+.project-item {
+  text-align: left;
+  padding: 0 10px;
+}
+
+.project-item:first-child {
+  padding-left: 0;
+}
+
+.project-item:last-child {
+  padding-right: 0;
+}
+
+.project-content {
+  display: flex;
+  overflow-x: auto;
+}
+
+.project-img {
+  width: 120px;
+  height: 120px;
+  background: #FFF;
+}
+
+.project-title {
+  color: #fff;
   padding: 10px 0;
+  font-weight: lighter;
+  font-size: 12px;
+}
+.project-content::-webkit-scrollbar {
+  display: none;
+}
+.project-content-title {
+  text-align: left;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
 }
