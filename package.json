@@ -1,0 +1,16 @@
+{
+  "name": "me",
+  "version": "0.1.0",
+  "author": "skady",
+  "dependencies": {
+    "react": "^16.13.2",
+    "react-dom": "^16.13.2",
+    "react-scripts": "^16.13.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
