@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Head from './component/head';
 import Profile from './component/profile';
 import Project from './component/project';
+import Skill from './component/skill';
 import profileData from './data/profile';
 import projectData from './data/project';
 import './App.css';
@@ -15,7 +16,7 @@ class App extends Component {
         { name: 'PROJECT' },
         { name: 'MYSKILL' },
       ],
-      activeIndex: 1,
+      activeIndex: 2,
     };
   }
   render() {
@@ -41,7 +42,8 @@ class App extends Component {
           </header>
           <div className="app-content">
             {this.state.activeIndex === 0 && <Profile data={profileData} />}
-            {this.state.activeIndex === 1 && <Project data={projectData}/>}
+            {this.state.activeIndex === 1 && <Project data={projectData} />}
+            {this.state.activeIndex === 2 && <Skill />}
           </div>
         </div>
       </div>

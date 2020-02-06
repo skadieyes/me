@@ -4,7 +4,7 @@
 }
 
 .app-body {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0px;
@@ -205,6 +205,7 @@
   padding: 10px 0 0;
   display: flex;
 }
+
 .project-close-icon {
   width: 15px;
   height: 15px;
@@ -216,12 +217,15 @@
 .project-close-icon-red {
   background-color: #fc4142;
 }
+
 .project-close-icon-yellow {
   background-color: #dfb520;
 }
+
 .project-close-icon-green {
   background-color: #46ba21;
 }
+
 .project-detail {
   position: fixed;
   bottom: 0;
@@ -237,6 +241,7 @@
   padding: 0 20px;
   overflow-y: auto;
 }
+
 .project-detail::-webkit-scrollbar {
   display: none;
 }
@@ -245,6 +250,7 @@
   height: 70%;
   animation: modalShowAnimate 0.2s;
 }
+
 .project-detail-hide {
   height: 0;
 }
@@ -266,6 +272,7 @@
     height: 70%
   }
 }
+
 @keyframes modalHideAnimate {
   0% {
     height: 70%;
@@ -283,6 +290,7 @@
     height: 0%;
   }
 }
+
 .project-detail-bg {
   position: fixed;
   bottom: 0;
@@ -323,4 +331,22 @@
 
 .project-detail-skill {
   margin-bottom: 10px;
+}
+
+/**
+ ** skill
+ **/
+ .skill {
+  position: absolute;
+  width: 100%;
+  left: 0;
+ }
+.skill-radar {
+  width: 300px;
+  height: 300px;
+}
+
+.cloud-chart {
+  width: 400px;
+  height: 400px;
 }
