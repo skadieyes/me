@@ -7,7 +7,7 @@ const profileData = [
         label: '511767852@qq.com',
     },
     {
-        title: 'Phone Number',
+        title: 'Phone Number/Wechat',
         label: '15921461671',
     },
     {
