@@ -24,7 +24,9 @@ class Project extends Component {
                     {
                         this.props.data.work.map((project, index) => {
                             return <div className="project-item" key={index} onClick={this.showModal.bind(this, project)}>
-                                <div className="project-img"></div>
+                                <div className="project-img">
+                                    <img className="project-img" src={project.avator} alt="avator"/>
+                                </div>
                                 <div className="project-title">{project.title}</div>
                             </div>
                         })
@@ -37,7 +39,10 @@ class Project extends Component {
                     {
                         this.props.data.personal.map((project, index) => {
                             return <div className="project-item" key={index} onClick={this.showModal.bind(this, project)}>
-                                <div className="project-img"></div>
+                                <div className="project-img">
+
+                                <img className="project-img" src={project.avator} alt="avator"/>
+                                </div>
                                 <div className="project-title">{project.title}</div>
                             </div>
                         })

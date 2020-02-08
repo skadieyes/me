@@ -178,7 +178,7 @@
 .project-img {
   width: 120px;
   height: 120px;
-  background: #FFF;
+  border-radius: 10px;
 }
 
 .project-title {
@@ -308,8 +308,10 @@
 }
 
 .project-detail-pic {
-  width: 100%;
-  padding-top: 20px;
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
 .project-detail-title {
