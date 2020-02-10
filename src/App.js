@@ -5,6 +5,7 @@ import Project from './component/project';
 import Skill from './component/skill';
 import profileData from './data/profile';
 import projectData from './data/project';
+import skillData from './data/skill';
 import './App.css';
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
         { name: 'PROJECT' },
         { name: 'MYSKILL' },
       ],
-      activeIndex: 1,
+      activeIndex: 2,
     };
   }
   render() {
@@ -43,7 +44,7 @@ class App extends Component {
           <div className="app-content">
             {this.state.activeIndex === 0 && <Profile data={profileData} />}
             {this.state.activeIndex === 1 && <Project data={projectData} />}
-            {this.state.activeIndex === 2 && <Skill />}
+            {this.state.activeIndex === 2 && <Skill data={skillData}/>}
           </div>
         </div>
       </div>
