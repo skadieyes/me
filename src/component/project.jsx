@@ -67,7 +67,7 @@ class Project extends Component {
                     <div className="project-detail-content" dangerouslySetInnerHTML={{
                         __html: `${this.state.project.label}` }}>
                     </div>
-                    <img className="project-detail-pic" src={this.state.project.img} alt="bg" border="0" />
+                    { this.state.project.img && <img className="project-detail-pic" src={this.state.project.img} alt="bg" border="0" />}
                 </div>
             </div>
         );
