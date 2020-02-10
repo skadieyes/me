@@ -17,7 +17,7 @@ class App extends Component {
         { name: 'PROJECT' },
         { name: 'MYSKILL' },
       ],
-      activeIndex: 2,
+      activeIndex: 0,
     };
   }
   render() {
