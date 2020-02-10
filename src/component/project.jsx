@@ -33,8 +33,8 @@ class Project extends Component {
                     }
                 </div>
                 <div className="project-content-title">
-                    个人项目
-                    </div>
+                    My toys
+                </div>
                 <div className="project-content">
                     {
                         this.props.data.personal.map((project, index) => {
